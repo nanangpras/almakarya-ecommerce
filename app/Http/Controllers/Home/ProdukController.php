@@ -94,12 +94,14 @@ class ProdukController extends Controller
         $subtotal = collect($cart)->sum(function($q){
                 return $q['qty'] * $q['price'];
         });
+        $app = SettingApp::all();
 
         return view('frontend.pages.produk_category',[
             'items' => $items,
             'categories' => $categories,
             'cart' => $cart,
             'subtotal' => $subtotal,
+            'app' => $app,
         ]);
     }
 

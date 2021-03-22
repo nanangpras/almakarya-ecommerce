@@ -33,28 +33,28 @@
     <ul id="banners_grid" class="clearfix">
         <li>
             <a href="#0" class="img_container">
-                <img src="img/banners_cat_placeholder.jpg" data-src="{{ url('frontend/img/products/banner1.jpg')}}" alt="" class="lazy" width="600" height="400">
+                <img src="img/banners_cat_placeholder.jpg" data-src="{{ url('frontend/img/products/banner_inspirasi.jpg')}}" alt="" class="lazy" width="600" height="400">
                 <div class="short_info opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-                    <h3>Koleksi Komik</h3>
-                    <div><span class="btn_1">Belanja Sekarang</span></div>
+                    <h3>Inspirasi Bisnis</h3>
+                    <div><span class="btn_1">Selengkapnya</span></div>
                 </div>
             </a>
         </li>
         <li>
             <a href="#0" class="img_container">
-                <img src="img/banners_cat_placeholder.jpg" data-src="{{ url('frontend/img/products/banner2.jpg')}}" alt="" class="lazy">
+                <img src="img/banners_cat_placeholder.jpg" data-src="{{ url('frontend/img/products/banner_desain.jpg')}}" alt="" class="lazy">
                 <div class="short_info opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-                    <h3>Koleksi Novel</h3>
-                    <div><span class="btn_1">Belanja Sekarang</span></div>
+                    <h3>Buat Alat</h3>
+                    <div><span class="btn_1">Selengkapnya</span></div>
                 </div>
             </a>
         </li>
         <li>
             <a href="#0" class="img_container">
-                <img src="img/banners_cat_placeholder.jpg" data-src="{{ url('frontend/img/products/banner3.jpg')}}" alt="" class="lazy">
+                <img src="img/banners_cat_placeholder.jpg" data-src="{{ url('frontend/img/products/banner_promo.jpg')}}" alt="" class="lazy">
                 <div class="short_info opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-                    <h3>Koleksi Sastra</h3>
-                    <div><span class="btn_1">Belanja Sekarang</span></div>
+                    <h3>Promo Terbaru</h3>
+                    <div><span class="btn_1">Selengkapnya</span></div>
                 </div>
             </a>
         </li>
@@ -63,9 +63,9 @@
 
     <div class="container margin_60_35">
         <div class="main_title">
-            <h2>Rekomendasi Jitus</h2>
-            <span>Books</span>
-            <p>Rekomendasi yang layak Anda baca dari kami</p>
+            <h2>Rekomendasi Almakarya</h2>
+            <span>Products</span>
+            <p>Rekomendasi untuk Anda</p>
         </div>
         <div class="row small-gutters">
             @foreach ($items as $book)
@@ -123,9 +123,9 @@
 
     <div class="container margin_60_35">
         <div class="main_title">
-            <h2>Buku-buku Terbaru</h2>
-            <span>Books</span>
-            <p>Buku terbaru dari Jitus</p>
+            <h2>Produk Terbaru</h2>
+            <span>Product</span>
+            <p>Produk terbaru dari Almakarya</p>
         </div>
         <div class="owl-carousel owl-theme products_carousel">
             @foreach ($terbaru as $item)

@@ -118,9 +118,9 @@
                         <div class="grid_item">
                             <figure>
                                 <a href="{{ route('produk-detail',$book->slug)}}">
-                                    <img class="img-fluid lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="{{ $book->imagebook->count() ? Storage::url($book->imagebook->first()->image) : '' }}" alt="">
+                                    <img class="img-fluid lazy" src="{{ url ('frontend/img/products/product_placeholder_square_medium.jpg')}}" data-src="{{ $book->imagebook->count() ? Storage::url($book->imagebook->first()->image) : '' }}" alt="">
                                 </a>
-                                <div data-countdown="2019/05/15" class="countdown"></div>
+                                {{-- <div data-countdown="2019/05/15" class="countdown"></div> --}}
                             </figure>
                             <a href="{{ route('produk-detail',$book->slug)}}">
                                 <h3>{{ $book->title}}</h3>
