@@ -4,14 +4,14 @@
     <!-- Title -->
     <div class="row heading-bg">
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-          <h5 class="txt-dark">Data Books</h5>
+          <h5 class="txt-dark">Data Produk</h5>
         </div>
         <!-- Breadcrumb -->
         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Dashboard</a></li>
-            <li><a href="#"><span>Books</span></a></li>
-            <li class="active"><span>Data Books</span></li>
+            <li><a href="#"><span>Produk</span></a></li>
+            <li class="active"><span>Data Produk</span></li>
           </ol>
         </div>
         <!-- /Breadcrumb -->
@@ -24,7 +24,7 @@
             <div class="panel panel-default card-view">
                 <div class="panel-heading">
                     <div class="pull-left">
-                        <a href="{{ route('book.create')}}" class="btn btn-primary btn-sm btn-rounded"> + Add Book</a>
+                        <a href="{{ route('book.create')}}" class="btn btn-primary btn-sm btn-rounded"> +  Produk</a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -35,22 +35,22 @@
                                 <table id="myTable1" class="table table-hover display  pb-30" >
                                     <thead>
                                         <tr>
-                                            <th>ISBN</th>
+                                            <th>No Produk</th>
                                             {{-- <th>Image</th> --}}
-                                            <th>Title</th>
-                                            <th>Price</th>
-                                            <th>Qty</th>
-                                            <th>Action</th>
+                                            <th>Nama</th>
+                                            <th>Harga</th>
+                                            <th>Jumlah</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>ISBN</th>
+                                            <th>No Produk</th>
                                             {{-- <th>Image</th> --}}
-                                            <th>Title</th>
-                                            <th>Price</th>
-                                            <th>Qty</th>
-                                            <th>Action</th>
+                                            <th>Nama</th>
+                                            <th>Harga</th>
+                                            <th>Jumlah</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>

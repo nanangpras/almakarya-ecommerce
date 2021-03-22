@@ -4,14 +4,14 @@
     <!-- Title -->
     <div class="row heading-bg">
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-          <h5 class="txt-dark">add-products</h5>
+          <h5 class="txt-dark">add-gambar</h5>
         </div>
         <!-- Breadcrumb -->
         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Dashboard</a></li>
             <li><a href="#"><span>e-commerce</span></a></li>
-            <li class="active"><span>add-products</span></li>
+            <li class="active"><span>add-gambar</span></li>
           </ol>
         </div>
         <!-- /Breadcrumb -->
@@ -24,7 +24,7 @@
             <div class="panel panel-default card-view">
                 <div class="panel-heading">
                     <div class="pull-left">
-                        <h6 class="panel-title inline-block txt-dark">Book Image</h6>
+                        <h6 class="panel-title inline-block txt-dark">Gambar Produk</h6>
                         <span class="label label-info capitalize-font inline-block ml-10">{{ $book->title }}</span>
                     </div>
                     <div class="clearfix"></div>
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <a href="{{ route('book.index')}}" class="btn btn-primary waves-effect waves-light">Back</a>
-            <a href="{{ route('bookimage.create')}}" class="btn btn-success waves-effect waves-light">Add Image</a>
+            <a href="{{ route('bookimage.create')}}" class="btn btn-success waves-effect waves-light">+ Gambar</a>
         </div>
     </div>
     <!-- /Row -->

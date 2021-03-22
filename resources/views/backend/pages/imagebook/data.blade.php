@@ -94,21 +94,23 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body" id="smallBody">
-                <form action="{{ route('bookimage.destroy',$item->id) }}"
-                    method="post"
-                    class="d-inline"
-                    id="delete{{$item->id}}">
-                    @csrf
-                    @method('delete')
-                    <input type="hidden" id="id" name="id">
-                    <p class="text-center">Are you sure you want to delete </p>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </form>
-            </div>
+            @foreach ($image as $item)
+                <div class="modal-body" id="smallBody">
+                    <form action="{{ route('bookimage.destroy',$item->id) }}"
+                        method="post"
+                        class="d-inline"
+                        id="delete{{$item->id}}">
+                        @csrf
+                        @method('delete')
+                        <input type="hidden" id="id" name="id">
+                        <p class="text-center">Are you sure you want to delete </p>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            @endforeach
         </div>
     </div>
 </div>

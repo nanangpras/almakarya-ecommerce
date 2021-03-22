@@ -4,7 +4,7 @@
 					<div class="logo-wrap">
 						<a href="/admin">
 							<img class="brand-img" src="{{url('backend/img/logo.png')}}" alt="brand" />
-							<span class="brand-text">Jitus</span>
+							<span class="brand-text">Almakarya</span>
 						</a>
 					</div>
 				</div>

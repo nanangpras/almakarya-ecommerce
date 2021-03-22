@@ -4,14 +4,14 @@
     <!-- Title -->
     <div class="row heading-bg">
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-          <h5 class="txt-dark">Add Book</h5>
+          <h5 class="txt-dark">Add Produk</h5>
         </div>
         <!-- Breadcrumb -->
         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Dashboard</a></li>
-            <li><a href="#"><span>Books</span></a></li>
-            <li class="active"><span>Add Book</span></li>
+            <li><a href="#"><span>Produk</span></a></li>
+            <li class="active"><span>Add Produk</span></li>
           </ol>
         </div>
         <!-- /Breadcrumb -->
@@ -27,18 +27,18 @@
                         <div class="form-wrap">
                             <form action="{{ route('book.store')}}" method="POST">
                                 @csrf
-                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i>about product</h6>
+                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i>tentang produk</h6>
                                 <hr class="light-grey-hr"/>
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-5">Publisher</label>
+                                            <label class="control-label mb-5">Made In</label>
                                             <select name="publisher" class="form-control @error('author') is invalid @enderror">
-                                                <option>-- Pilih Publisher --</option>
+                                                <option>-- Pilih Made In --</option>
                                                 @foreach ($publisher as $id => $name)
                                                 <option value="{{$id}}">{{$name}}</option>
                                                 @endforeach
-                                                <a href="google.com" class=""><option value="">-- Buat Publisher --</option> </a>
+                                                <a href="google.com" class=""><option value="">-- Buat Made In --</option> </a>
                     
                                                 {{-- < value="2">Tas</> --}}
                                             </select>
@@ -49,12 +49,12 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-5">Author</label>
+                                            <label class="control-label mb-5">Nama Perusahaan</label>
                                             <select name="author" class="form-control @error('author') is invalid @enderror" tabindex="1">
                                                 @foreach ($author as $id => $name)
                                                 <option value="{{$id}}">{{$name}}</option>
                                                 @endforeach
-                                                <option value="{{ route('author.index')}}">-- Buat Author --</option>
+                                                <option value="{{ route('author.index')}}">-- Buat Perusahaan --</option>
                     
                                                 {{-- <option value="2">Tas</option> --}}
                                             </select>
@@ -68,8 +68,8 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-10">ISBN</label>
-                                            <input type="text" name="isbn" placeholder="ISBN"
+                                            <label class="control-label mb-10">No Produk</label>
+                                            <input type="text" name="isbn" placeholder="No Produk / SKU"
                                                     class="form-control @error('isbn') is invalid @enderror" value="{{old('isbn')}}">
                                             @error('isbn')
                                                 <span class="help-block"> {{$message}} </span>
@@ -79,8 +79,8 @@
                                     <!--/span-->
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-10">Book Title</label>
-                                            <input type="text" name="title" placeholder="Book Name"
+                                            <label class="control-label mb-10">Nama Produk</label>
+                                            <input type="text" name="title" placeholder="Nama Produk"
                                                     class="form-control @error('title') is invalid @enderror" value="{{old('title')}}">
                                             @error('title')
                                                 <span class="help-block"> {{$message}} </span>
@@ -93,9 +93,9 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-10">Category</label>
+                                            <label class="control-label mb-10">Kategori</label>
                                             <select name="category_id" class="form-control @error('category_id') is invalid @enderror" tabindex="1">
-                                                <option>-- Pilih Category --</option>
+                                                <option>-- Pilih Kategori --</option>
                                                 @foreach ($category as $id => $name)
                                                     <option value="{{$id}}">{{$name}}</option>
                                                 @endforeach
@@ -110,7 +110,7 @@
                                     <!--/span-->
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-10">Recomendation</label>
+                                            <label class="control-label mb-10">Apakah Produk di Rekomendasikan?</label>
                                             <div class="radio-list">
                                                 <div class="radio-inline pl-0">
                                                     <div class="radio radio-success">
@@ -140,7 +140,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-10">Price</label>
+                                            <label class="control-label mb-10">Harga</label>
                                             <div class="input-group">
                                                 <div class="input-group-addon"><i class="ti-money"></i></div>
                                                 <input type="number" name="price" placeholder="Rp 45.000"
@@ -154,7 +154,7 @@
                                     <!--/span-->
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-10">Discount</label>
+                                            <label class="control-label mb-10">Diskon (%)</label>
                                             <div class="input-group">
                                                 <div class="input-group-addon"><i class="ti-cut"></i></div>
                                                 <input type="text" class="form-control" placeholder="36%">
@@ -164,7 +164,7 @@
                                     <!--/span-->
                                 </div>
                                 <div class="seprator-block"></div>
-                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-comment-text mr-10"></i>Product Description</h6>
+                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-comment-text mr-10"></i>Diskripsi Produk</h6>
                                 <hr class="light-grey-hr"/>
                                 <div class="row">
                                     <div class="col-md-12">
@@ -177,7 +177,7 @@
                                     </div>
                                 </div>
                                 <div class="seprator-block"></div>
-                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-calendar-note mr-10"></i>general info</h6>
+                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-calendar-note mr-10"></i>informasi Dasar</h6>
                                 <hr class="light-grey-hr"/>
                                 {{-- <div class="row">
                                     <div class="col-sm-6">
@@ -217,7 +217,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-5">Publication book</label>
+                                            <label class="control-label mb-5">Tahun Versi Terbaru</label>
                                             <input type="text" name="publication_date" placeholder="Publication date book"
                                                 class="form-control @error('publication_date') is invalid @enderror" value="{{old('publication_date')}}">
                                             @error('publication_date')
@@ -227,8 +227,8 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-5">Publication Ebook</label>
-                                            <input type="text" name="publication_ebook" placeholder="Publication date ebook"
+                                            <label class="control-label mb-5">Tahun Revisi</label>
+                                            <input type="text" name="publication_ebook" placeholder="Tahun Pembuatan Terakhir"
                                                 class="form-control @error('publication_ebook') is invalid @enderror" value="{{old('publication_ebook')}}">
                                             @error('publication_ebook')
                                                     <span class="help-block"> {{$message}} </span>
@@ -240,8 +240,8 @@
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label class="control-label mb-5">Weight</label>
-                                            <input type="text" name="weight" placeholder="Weight"
+                                            <label class="control-label mb-5">Berat (gram)</label>
+                                            <input type="text" name="weight" placeholder="1000gram"
                                                 class="form-control @error('weight') is invalid @enderror" value="{{old('weight')}}">
                                             @error('weight')
                                                 <span class="help-block"> {{$message}} </span>
@@ -250,8 +250,8 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label class="control-label mb-5">Size</label>
-                                            <input type="text" name="size" placeholder="Size"
+                                            <label class="control-label mb-5">Dimensi (p x l x t )</label>
+                                            <input type="text" name="size" placeholder=" 4 x 4 x 5"
                                                 class="form-control @error('size') is invalid @enderror" value="{{old('size')}}">
                                             @error('size')
                                                 <span class="help-block"> {{$message}} </span>
@@ -260,8 +260,8 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label class="control-label mb-5">Quantity</label>
-                                            <input type="text" name="available_qty" placeholder="Available quantity"
+                                            <label class="control-label mb-5">Jumlah Produk</label>
+                                            <input type="text" name="available_qty" placeholder="jumlah produk"
                                                 class="form-control @error('available_qty') is invalid @enderror" value="{{old('available_qty')}}">
                                             @error('available_qty')
                                                 <span class="help-block"> {{$message}} </span>

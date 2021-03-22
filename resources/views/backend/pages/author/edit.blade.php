@@ -28,12 +28,12 @@
                             <form action="{{ route('author.update',$item->id)}}" method="POST">
                                 @method('PUT')
                                 @csrf
-                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i>Add Author</h6>
+                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i>Add Perusahaan</h6>
                                 <hr class="light-grey-hr"/>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-10">Name</label>
+                                            <label class="control-label mb-10">Nama</label>
                                             <input type="text" id="name" name="name" value="{{old('name') ? old('name') : $item->name}}"
                                             class="form-control @error('name') is invalid @enderror" value="{{old('name')}}">
                                             @error('name')
@@ -44,7 +44,7 @@
                                     <!--/span-->
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="control-label mb-10">Company</label>
+                                            <label class="control-label mb-10">Perusahaan</label>
                                             <input type="text" id="company_name" name="company_name" value="{{ old('company_name') ? old('company_name') : $item->company_name}}"
                                                 class="form-control @error('company_name') is invalid @enderror" value="{{old('company_name')}}">
                                             @error('company_name')

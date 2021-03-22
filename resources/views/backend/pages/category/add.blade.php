@@ -4,14 +4,14 @@
     <!-- Title -->
     <div class="row heading-bg">
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-          <h5 class="txt-dark">add-categories</h5>
+          <h5 class="txt-dark">add-kategori</h5>
         </div>
         <!-- Breadcrumb -->
         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
           <ol class="breadcrumb">
             <li><a href="index.html">Dashboard</a></li>
-            <li><a href="#"><span>categories</span></a></li>
-            <li class="active"><span>add-categories</span></li>
+            <li><a href="#"><span>kategori</span></a></li>
+            <li class="active"><span>add-kategori</span></li>
           </ol>
         </div>
         <!-- /Breadcrumb -->
@@ -27,12 +27,12 @@
                         <div class="form-wrap">
                             <form action="{{ route('category.store')}}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i>Add Category</h6>
+                                <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-info-outline mr-10"></i>+ Kategori</h6>
                                 <hr class="light-grey-hr"/>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label class="control-label mb-10">Name</label>
+                                            <label class="control-label mb-10">Nama</label>
                                             <input type="text" id="name" name="name" placeholder="Category Name"
                                             class="form-control @error('name') is invalid @enderror" value="{{old('name')}}">
                                             @error('name')
@@ -43,7 +43,7 @@
                                     <!--/span-->
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label class="control-label mb-10">Image</label>
+                                            <label class="control-label mb-10">Gambar</label>
                                             <input type="file" id="company_name" name="image" placeholder="Company Name"
                                                 class="upload form-control @error('image') is invalid @enderror" value="{{old('image')}}"
                                                 onchange="previewFile(this)">

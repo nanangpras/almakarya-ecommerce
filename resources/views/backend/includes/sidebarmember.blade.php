@@ -49,13 +49,13 @@
             </a>
         </li>
         <li class="navigation-header">
-            <span>Jitus</span>
+            <span>Almakarya</span>
             <i class="zmdi zmdi-more"></i>
 		</li>
 		<li>
             <a href="/">
                 <div class="pull-left"><i class="zmdi zmdi-dock mr-20"></i><span
-                        class="right-nav-text">Halaman Jitus</span></div>
+                        class="right-nav-text">Halaman Web</span></div>
                 <div class="clearfix"></div>
             </a>
         </li>

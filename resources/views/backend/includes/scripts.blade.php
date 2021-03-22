@@ -47,6 +47,7 @@
 <!-- Init JavaScript -->
 <script src="{{ url('backend/dist/js/init.js') }}"></script>
 <script src="{{ url('backend/dist/js/ecommerce-data.js') }}"></script>
+
 {{-- ckeditor --}}
 <script src="//cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
 <script>

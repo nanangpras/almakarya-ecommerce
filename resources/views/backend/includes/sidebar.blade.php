@@ -37,16 +37,16 @@
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_dr">
 				<div class="pull-left"><i class="zmdi zmdi-book mr-20"></i>
-					<span class="right-nav-text">Buku</span></div>
+					<span class="right-nav-text">Produk</span></div>
                 <div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
                 <div class="clearfix"></div>
             </a>
             <ul id="ui_dr" class="collapse collapse-level-1 two-col-list">
                 <li>
-                    <a href="{{ route('book.index')}}">Data Buku</a>
+                    <a href="{{ route('book.index')}}">Data Produk</a>
                 </li>
                 <li>
-                    <a href="{{ route('book.create')}}">Tambah Buku</a>
+                    <a href="{{ route('book.create')}}">Tambah Produk</a>
                 </li>
                 <li>
                     <a href="{{ route('bookimage.index')}}">Gambar</a>
@@ -57,14 +57,14 @@
 		<li>
             <a href="{{ route('author.index')}}">
                 <div class="pull-left"><i class="zmdi zmdi-library mr-20"></i><span
-                        class="right-nav-text">Pengarang</span></div>
+                        class="right-nav-text">Perusahaan</span></div>
                 <div class="clearfix"></div>
             </a>
         </li>
 		<li>
             <a href="{{ route('publisher.index')}}">
                 <div class="pull-left"><i class="zmdi zmdi-graduation-cap mr-20"></i><span
-                        class="right-nav-text">Penerbit</span></div>
+                        class="right-nav-text">Made In</span></div>
                 <div class="clearfix"></div>
             </a>
         </li>
@@ -127,13 +127,13 @@
         </li>
 
         <li class="navigation-header">
-            <span>Jitus</span>
+            <span>Almakarya</span>
             <i class="zmdi zmdi-more"></i>
 		</li>
 		<li>
             <a href="/">
                 <div class="pull-left"><i class="zmdi zmdi-dock mr-20"></i><span
-                        class="right-nav-text">Halaman Jitus</span></div>
+                        class="right-nav-text">Halaman Web</span></div>
                 <div class="clearfix"></div>
             </a>
         </li>
