@@ -51,7 +51,7 @@ class CartController extends Controller
 
         $cookie = cookie('jitus-carts',json_encode($cart),2880);
 
-        return redirect()->back()->with(['success' => 'Buku ditambahkan ke keranjang'])->cookie($cookie);
+        return redirect()->back()->with(['success' => 'Produk ditambahkan ke keranjang'])->cookie($cookie);
 
     }
 
