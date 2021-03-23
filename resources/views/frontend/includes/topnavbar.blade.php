@@ -30,6 +30,15 @@
                                     <li>
                                         <a href="{{route('produk')}}">Produk</a>
                                     </li>
+                                    <li>
+                                        <a href="https://shopee.co.id/almakarya">Shopee</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Artikel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cara Order</a>
+                                    </li>
                                 </ul>
                             </div>
                             <!--/main-menu -->
@@ -78,7 +87,7 @@
                         <div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
                             <div class="custom-search-input">
                                 <form action="{{ route('search')}}" method="GET">
-                                    <input type="text" name="keyword" placeholder="Cari Judul Buku, Produk" >
+                                    <input type="text" name="keyword" placeholder="Cari Produk..." >
                                     <button type="submit"><i class="header-icon_search_custom"></i></button>
                                 </form>
                             </div>
@@ -166,8 +175,13 @@
                     <!-- /row -->
                 </div>
                 <div class="search_mob_wp">
-                    <input type="text" class="form-control" placeholder="Search over 10.000 products">
-                    <input type="submit" class="btn_1 full-width" value="Search">
+                    <form action="{{ route('search')}}" method="GET">
+                        <input type="text" name="keyword" placeholder="Cari Produk..." >
+                        <button type="submit"><i class="header-icon_search_custom"></i></button>
+                    </form>
+
+                    {{-- <input type="text" class="form-control" placeholder="Cari Produk..."> --}}
+                    {{-- <input type="submit" class="btn_1 full-width" value="Search"> --}}
                 </div>
                 <!-- /search_mobile -->
             </div>

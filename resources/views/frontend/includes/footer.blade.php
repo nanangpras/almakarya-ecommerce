@@ -5,10 +5,21 @@
                         <h3 data-target="#collapse_1">Menu</h3>
                         <div class="collapse dont-collapse-sm links" id="collapse_1">
                             <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="help.html">FAQ</a></li>
-                                <li><a href="help.html">Cara Belanja</a></li>
-                                <li><a href="account.html">My account</a></li>
+                                <li>
+                                    <a href="{{ route('beranda')}}">Beranda</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('produk')}}">Produk</a>
+                                </li>
+                                <li>
+                                    <a href="https://shopee.co.id/almakarya">Shopee</a>
+                                </li>
+                                <li>
+                                    <a href="#">Artikel</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cara Order</a>
+                                </li>
                             </ul>
                         </div>
                     </div>

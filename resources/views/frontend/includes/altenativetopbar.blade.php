@@ -30,6 +30,15 @@
                                     <li>
                                         <a href="{{route('produk')}}">Produk</a>
                                     </li>
+                                    <li>
+                                        <a href="https://shopee.co.id/almakarya">Shopee</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Artikel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cara Order</a>
+                                    </li>
                                 </ul>
                             </div>
                             <!--/main-menu -->

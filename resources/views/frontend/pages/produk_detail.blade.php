@@ -116,19 +116,19 @@
                                         <table class="table table-sm table-striped">
                                             <tbody>
                                                 <tr>
-                                                    <td><strong>ISBN</strong></td>
+                                                    <td><strong>No Produk</strong></td>
                                                     <td>{{ $items->isbn}}</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><strong>Size</strong></td>
+                                                    <td><strong>Dimensi</strong></td>
                                                     <td>{{ $items->size}}</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><strong>Weight</strong></td>
+                                                    <td><strong>Berat</strong></td>
                                                     <td>{{ $items->weight }} gr</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><strong>Ebook</strong></td>
+                                                    <td><strong>Awal Produksi</strong></td>
                                                     <td>{{ $items->publication_ebook }}</td>
                                                 </tr>
                                             </tbody>
