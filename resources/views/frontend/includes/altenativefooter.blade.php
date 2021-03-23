@@ -13,7 +13,7 @@
                                     <a href="{{route('produk')}}">Produk</a>
                                 </li>
                                 <li>
-                                    <a href="https://shopee.co.id/almakarya">Shopee</a>
+                                    <a href="https://shopee.co.id/almakarya" target="_blank">Shopee</a>
                                 </li>
                                 <li>
                                     <a href="#">Artikel</a>
