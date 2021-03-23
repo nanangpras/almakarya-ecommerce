@@ -158,6 +158,7 @@
                         // console.log(data);
 
                         $('select[name="city_id"]').empty();
+                        $('select[name="city_id"]').append('<option value="">Pilih Kabupaten/Kota</option>')
                         $.each(data, function(key, value) {
                             $('select[name="city_id"]').append(
                                 '<option value="' + value.city_id +
@@ -183,6 +184,7 @@
                         // console.log(data);
 
                         $('select[name="subdistrict_id"]').empty();
+                        $('select[name="subdistrict_id"]').append('<option value="">Pilih Kecamatan</option>')
                         $.each(data, function(key, value) {
                             $('select[name="subdistrict_id"]').append(
                                 '<option value="' + value.subdistrict_id +
@@ -194,6 +196,7 @@
                 })
             } else {
                 $('select[name="subdistrict_id"]').empty();
+                $('select[name="subdistrict_id"]').append('<option value="">Loading...</option>')
             }
         });
 

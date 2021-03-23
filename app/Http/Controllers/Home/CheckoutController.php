@@ -66,8 +66,8 @@ class CheckoutController extends Controller
             'user_id' => Auth::user()->id,
             'transaction_total' => $subtotal + $request->ongkir,
             'transaction_status' => 'In_Cart',
-            'bank_name' => 'BNI',
-            'va_number' => 12,
+            'bank_name' => 'bank',
+            'va_number' => 0,
             'courier' => $request->courier,
             'cost' => $request->ongkir
         ]);

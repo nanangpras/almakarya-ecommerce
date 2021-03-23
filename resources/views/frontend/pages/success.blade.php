@@ -18,7 +18,7 @@
 							</svg>
 						</div>
 					    <h2>Pemesanan Selesai!</h2>
-					    <p>Terimakasih, sudah belanja di jitus.id</p>
+					    <p>Terimakasih, sudah belanja di almakarya.com</p>
 
                         <div class="form_container">
                             <h4> Detail Pesanan</h4>
