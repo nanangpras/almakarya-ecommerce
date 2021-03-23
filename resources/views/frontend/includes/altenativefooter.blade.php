@@ -38,14 +38,14 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
-                        <h3 data-target="#collapse_4">Keep in touch</h3>
+                        <h3 data-target="#collapse_4">Sosial Media</h3>
                         <div class="collapse dont-collapse-sm" id="collapse_4">
-                            <div id="newsletter">
+                            {{-- <div id="newsletter">
                                 <div class="form-group">
                                     <input type="email" name="email_newsletter" id="email_newsletter" class="form-control" placeholder="Your email">
                                     <button type="submit" id="submit-newsletter"><i class="ti-angle-double-right"></i></button>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="follow_us">
                                 <h5>Follow Us</h5>
                                 <ul>
